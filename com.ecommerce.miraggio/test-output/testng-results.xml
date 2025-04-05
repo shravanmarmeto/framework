@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-25T13:16:34 IST" name="Suite" finished-at="2025-03-25T13:16:48 IST" duration-ms="13444">
+    <groups>
+    </groups>
+    <test started-at="2025-03-25T13:16:34 IST" name="Test" finished-at="2025-03-25T13:16:48 IST" duration-ms="13444">
+      <class name="com.ecommerce.miraggio.pdpPractice">
+        <test-method is-config="true" signature="extentreport()[pri:0, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:34 IST" name="extentreport" finished-at="2025-03-25T13:16:34 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentreport -->
+        <test-method is-config="true" signature="browser(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:34 IST" name="browser" finished-at="2025-03-25T13:16:36 IST" duration-ms="1458" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3bddc676]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:36 IST" name="openBrowser" finished-at="2025-03-25T13:16:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="methods()[pri:0, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:36 IST" name="methods" finished-at="2025-03-25T13:16:36 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methods -->
+        <test-method signature="shopByCatogory()[pri:0, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:36 IST" name="shopByCatogory" finished-at="2025-03-25T13:16:39 IST" duration-ms="3041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopByCatogory -->
+        <test-method is-config="true" signature="closing(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:39 IST" name="closing" finished-at="2025-03-25T13:16:39 IST" duration-ms="258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shopByCatogory status=SUCCESS method=pdpPractice.shopByCatogory()[pri:0, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.ecommerce.miraggio.pdpPractice.shopByCatogory() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closing -->
+        <test-method is-config="true" signature="methods()[pri:0, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:39 IST" name="methods" finished-at="2025-03-25T13:16:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methods -->
+        <test-method signature="plp()[pri:1, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:39 IST" name="plp" finished-at="2025-03-25T13:16:44 IST" duration-ms="4367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- plp -->
+        <test-method is-config="true" signature="closing(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:44 IST" name="closing" finished-at="2025-03-25T13:16:44 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=plp status=SUCCESS method=pdpPractice.plp()[pri:1, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.ecommerce.miraggio.pdpPractice.plp() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closing -->
+        <test-method signature="variant()[pri:2, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:44 IST" name="variant" finished-at="2025-03-25T13:16:48 IST" duration-ms="4251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- variant -->
+        <test-method is-config="true" signature="methods()[pri:0, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:44 IST" name="methods" finished-at="2025-03-25T13:16:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methods -->
+        <test-method is-config="true" signature="closing(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba]" started-at="2025-03-25T13:16:48 IST" name="closing" finished-at="2025-03-25T13:16:48 IST" duration-ms="20" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=variant status=SUCCESS method=pdpPractice.variant()[pri:2, instance:com.ecommerce.miraggio.pdpPractice@303cf2ba] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.ecommerce.miraggio.pdpPractice.variant() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closing -->
+      </class> <!-- com.ecommerce.miraggio.pdpPractice -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
