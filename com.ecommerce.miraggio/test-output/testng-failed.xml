@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="genericUtility.listenerImplementation"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="author" value="shravan"/>
-    <parameter name="browser" value="chrome"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecommerce.miraggio.pdpPractice">
+      <class name="com.ecommerce.miraggio.plpTest">
         <methods>
+          <include name="featuredCollection"/>
           <include name="browser"/>
           <include name="extentreport"/>
           <include name="methods"/>
-          <include name="variant"/>
           <include name="openBrowser"/>
           <include name="closing"/>
         </methods>
-      </class> <!-- com.ecommerce.miraggio.pdpPractice -->
+      </class> <!-- com.ecommerce.miraggio.plpTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

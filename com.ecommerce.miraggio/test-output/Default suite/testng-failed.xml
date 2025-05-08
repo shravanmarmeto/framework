@@ -3,18 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecommerce.miraggio.pdpPractice">
+      <class name="com.ecommerce.miraggio.plpTest">
         <methods>
-          <include name="shopByCatogory"/>
+          <include name="featuredCollection"/>
           <include name="browser"/>
           <include name="extentreport"/>
           <include name="methods"/>
-          <include name="variant"/>
           <include name="openBrowser"/>
           <include name="closing"/>
-          <include name="plp"/>
         </methods>
-      </class> <!-- com.ecommerce.miraggio.pdpPractice -->
+      </class> <!-- com.ecommerce.miraggio.plpTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

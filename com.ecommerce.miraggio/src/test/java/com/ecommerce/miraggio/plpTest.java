@@ -84,4 +84,11 @@ public class plpTest extends baseClass {
 		Assert.assertEquals(product, actualTitle, "Title not matching");
 		//driver.navigate().back();
 	}
+	
+	@Test(priority = 3)
+	// 3: Apply price filters
+	public void pricFilter() throws InterruptedException {
+		plp p = new plp(driver);
+		
+	}
 }

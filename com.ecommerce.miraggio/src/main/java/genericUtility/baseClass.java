@@ -3,6 +3,7 @@ package genericUtility;
 import java.lang.reflect.Method;
 import java.time.Duration;
 import java.util.Date;
+
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,7 +15,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.testng.xml.XmlTest;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -34,9 +38,14 @@ public class baseClass extends webdriverUtility implements iConstantUtility {
 		er.attachReporter(esp);
 	}
 
-	@Parameters("browser")
+	@Parameters({"browser"})
 	@BeforeTest
-	public void browser(String br, ITestContext context) {
+	public void browser(@Optional("") String br, ITestContext context) {
+		
+		 if (br == null || br.isEmpty()) {
+	            // If not, fallback to the browser set in config.properties
+	            br = "chrome";
+	        }
 		if (br.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
@@ -51,7 +60,11 @@ public class baseClass extends webdriverUtility implements iConstantUtility {
 		et = er.createTest(context.getName());
 		Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();
 		String device = cap.getBrowserName() + "-" + cap.getBrowserVersion();
-		String author = context.getCurrentXmlTest().getParameter("author");
+		String author = "Default Author"; // fallback value
+		XmlTest xmlTest = context.getCurrentXmlTest();
+		if (xmlTest != null && xmlTest.getParameter("author") != null) {
+		    author = xmlTest.getParameter("author");
+		}
 		et.assignAuthor(author);
 		et.assignDevice(device);
 
